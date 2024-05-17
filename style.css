@@ -4,7 +4,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
-    background-color: #161616
+    background: linear-gradient(120deg, #000000, #000000, #FF6600);
 }
 
 * {
@@ -167,11 +167,11 @@ specs ul {
 
 .specs li {
     padding: 0.6em 0;
-    border-bottom: #555 1px solid;
+    border-bottom: #ffffff 1px solid;
 }
 
 .specs li span:first-child {
-    color: #888;
+    color: #ffffff;
 }
 
 .panels {
@@ -213,18 +213,20 @@ specs ul {
 
 .panel:nth-child(3) {
     background:
-    url(assets/imgs/bugatti5.jpeg) no-repeat center;
+        url(assets/imgs/bugatti5.jpeg) no-repeat center;
 }
+
 .panel:nth-child(2),
-.panel:nth-child(3){
+.panel:nth-child(3) {
     background-size: cover;
     position: relative;
 }
+
 .specs::before,
 .panel:nth-child(2):before,
-.panel:nth-child(3):before{
+.panel:nth-child(3):before {
     content: '';
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -232,5 +234,89 @@ specs ul {
     height: 100%;
     z-index: 0;
 }
+.panel h2{
+    margin: 0.7em 0;
+}
+.panel-lg{
+    background: 
+    url(assets/imgs/bugatti8.jpg)
+    no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
 
+.cars-stats{
+    padding: 5em 1em;
+}
+
+.stats{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stats > div{
+    margin-bottom: 1em;
+    position: relative;
+    min-width: 10em;
+}
+
+.stats > div h1:nth-child(2){
+    color: #282828;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.stats h5{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+.counter{
+    margin: 0.1em 0;
+
+}
+
+.car{
+    padding: 4em 1em 4em 1em;
+    margin-top: 8em;
+}
+
+.circle{
+    border: 2px #ccc solid;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    background: #161616;
+    animation: 
+    glow 4s ease-in-out infinite;
+    aspect-ratio: 3 / 1 ;
+}
+
+.car img {
+    width: 70%;
+    position: absolute;
+    top: -50;
+    left: 50%;
+    transform: translateX(-50);
+    z-index: 1;
+}
+
+.circle div{
+    border-radius: inherit;
+    background: inherit;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    animation: inherit;
+}
 
